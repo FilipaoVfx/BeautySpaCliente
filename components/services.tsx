@@ -6,25 +6,25 @@ const services = [
     icon: Flower2,
     title: "Masajes Terapéuticos",
     description: "Masajes relajantes y terapéuticos diseñados para aliviar tensiones físicas y restaurar el equilibrio de tu cuerpo.",
-    image: "/service-massage.jpg"
+    image: "/masajeTerapeutico.png"
   },
   {
     icon: Sparkles,
     title: "Reiki y Sanación Energética",
     description: "Terapias de sanación con cristales, sonido y energía universal para armonizar tus chakras y restaurar tu aura.",
-    image: "/service-reiki.jpg"
+    image: "/sanacionEnergetica.png"
   },
   {
     icon: Droplets,
     title: "Aromaterapia Personalizada",
     description: "Tratamientos con aceites esenciales seleccionados especialmente para tus necesidades de bienestar.",
-    image: "/service-aromatherapy.jpg"
+    image: "/aroma.png"
   },
   {
     icon: Wind,
     title: "Meditación Guiada",
     description: "Sesiones de meditación y respiración consciente para alcanzar paz interior y claridad mental.",
-    image: "/service-meditation.jpg"
+    image: "/meditacion.png"
   }
 ]
 
@@ -40,14 +40,14 @@ export function Services() {
             Terapias para tu bienestar integral
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Cada tratamiento está diseñado para equilibrar tu energía y mejorar tu bienestar 
+            Cada tratamiento está diseñado para equilibrar tu energía y mejorar tu bienestar
             desde adentro hacia afuera.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service) => (
-            <div 
+            <div
               key={service.title}
               className="group bg-background rounded-lg overflow-hidden border border-border hover:shadow-lg transition-shadow"
             >
