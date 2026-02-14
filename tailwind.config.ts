@@ -88,10 +88,23 @@ const config: Config = {
             height: '0',
           },
         },
+        'smoke-fade-in': {
+          '0%': {
+            opacity: '0',
+            filter: 'blur(10px)',
+            transform: 'translateY(20px) scale(0.95)'
+          },
+          '100%': {
+            opacity: '1',
+            filter: 'blur(0)',
+            transform: 'translateY(0) scale(1)'
+          },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'smoke': 'smoke-fade-in 1.5s ease-out forwards',
       },
     },
   },

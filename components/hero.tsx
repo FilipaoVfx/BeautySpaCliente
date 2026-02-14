@@ -16,17 +16,17 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-2xl">
-          <p className="text-primary font-medium tracking-widest uppercase mb-4">
+          <p className="opacity-0 animate-smoke text-primary font-medium tracking-widest uppercase mb-4">
             Centro de Bienestar Integral
           </p>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-foreground leading-tight mb-6 text-balance">
+          <h1 className="opacity-0 animate-smoke delay-300 font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold text-foreground leading-tight mb-6 text-balance">
             Healing
           </h1>
-          <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
+          <p className="opacity-0 animate-smoke delay-700 text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
             Terapias holísticas y estética integral. Línea de productos naturales
             y experiencias de sanación en Santiago de Cali, Colombia.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="opacity-0 animate-smoke delay-1000 flex flex-col sm:flex-row gap-4">
             <Button size="lg" asChild className="text-base">
               <Link href="#reservar">Reservar Cita</Link>
             </Button>
