@@ -3,8 +3,18 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
+    <section className="relative min-h-screen flex items-center overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: "url('/piedras.png')" }}
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-background/30 backdrop-blur-[2px] z-0" />
+
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-2xl">
           <p className="text-primary font-medium tracking-widest uppercase mb-4">
             Centro de Bienestar Integral
@@ -13,7 +23,7 @@ export function Hero() {
             Healing
           </h1>
           <p className="text-lg sm:text-xl text-muted-foreground mb-8 leading-relaxed max-w-xl">
-            Terapias holísticas y estética integral. Línea de productos naturales 
+            Terapias holísticas y estética integral. Línea de productos naturales
             y experiencias de sanación en Santiago de Cali, Colombia.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
